@@ -1,0 +1,40 @@
+﻿Построение начато 13.08.2014 10:49:07.
+     1>Проект "c:\Users\Yury\documents\visual studio 2012\Projects\GetMyOrganizations\GetMyOrganizations\GetMyOrganizations.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GetMyOrganizations.cpp
+         GetMyOrganizations.cpp
+       Link:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\yury\documents\visual studio 2012\Projects\GetMyOrganizations\Release\GetMyOrganizations.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\yury\documents\visual studio 2012\Projects\GetMyOrganizations\Release\GetMyOrganizations.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\yury\documents\visual studio 2012\Projects\GetMyOrganizations\Release\GetMyOrganizations.lib" /MACHINE:X86 /SAFESEH Release\Address.pb.obj
+         Release\Content.pb.obj
+         Release\diadoc_api.obj
+         Release\DocumentId.pb.obj
+         Release\AcceptanceCertificateDocument.pb.obj
+         Release\BilateralDocument.pb.obj
+         Release\Document.pb.obj
+         Release\DocumentList.pb.obj
+         Release\InvoiceDocument.pb.obj
+         Release\NonformalizedDocument.pb.obj
+         Release\ReceiptStatus.pb.obj
+         Release\UnilateralDocument.pb.obj
+         Release\DocumentType.pb.obj
+         Release\DiadocMessage.GetApi.pb.obj
+         Release\DiadocMessage.PostApi.pb.obj
+         Release\ResolutionInfo.pb.obj
+         Release\ResolutionRequestDenialInfo.pb.obj
+         Release\ResolutionRequestInfo.pb.obj
+         Release\ForwardDocumentEvent.pb.obj
+         Release\GetMyOrganizations.obj
+         Release\Organization.pb.obj
+         Release\ResolutionTarget.pb.obj
+         Release\stdafx.obj
+         Release\Timestamp.pb.obj
+         Создание кода
+     1>c:\users\yury\documents\visual studio 2012\projects\getmyorganizations\getmyorganizations\diadoc_api.cpp(47): warning C4715: diadoc_api_functions::authorization: значение возвращается не при всех путях выполнения
+     1>c:\users\yury\documents\visual studio 2012\projects\getmyorganizations\getmyorganizations\diadoc_api.cpp(64): warning C4715: diadoc_api_functions::get_MyOrganizations: значение возвращается не при всех путях выполнения
+         Создание кода завершено
+         GetMyOrganizations.vcxproj -> c:\users\yury\documents\visual studio 2012\Projects\GetMyOrganizations\Release\GetMyOrganizations.exe
+     1>Построение проекта "c:\Users\Yury\documents\visual studio 2012\Projects\GetMyOrganizations\GetMyOrganizations\GetMyOrganizations.vcxproj" завершено (целевые объекты Build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:11.53

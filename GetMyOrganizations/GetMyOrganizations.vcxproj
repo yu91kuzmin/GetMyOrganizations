@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{254176F5-590D-413A-AD08-C6946434A351}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GetMyOrganizations</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Address.pb.h" />
+    <ClInclude Include="Content.pb.h" />
+    <ClInclude Include="diadoc_api.h" />
+    <ClInclude Include="DocumentId.pb.h" />
+    <ClInclude Include="Documents\AcceptanceCertificateDocument.pb.h" />
+    <ClInclude Include="Documents\BilateralDocument.pb.h" />
+    <ClInclude Include="Documents\Document.pb.h" />
+    <ClInclude Include="Documents\DocumentList.pb.h" />
+    <ClInclude Include="Documents\InvoiceDocument.pb.h" />
+    <ClInclude Include="Documents\NonformalizedDocument.pb.h" />
+    <ClInclude Include="Documents\ReceiptStatus.pb.h" />
+    <ClInclude Include="Documents\UnilateralDocument.pb.h" />
+    <ClInclude Include="DocumentType.pb.h" />
+    <ClInclude Include="Events\DiadocMessage.GetApi.pb.h" />
+    <ClInclude Include="Events\DiadocMessage.PostApi.pb.h" />
+    <ClInclude Include="Events\ResolutionInfo.pb.h" />
+    <ClInclude Include="Events\ResolutionRequestDenialInfo.pb.h" />
+    <ClInclude Include="Events\ResolutionRequestInfo.pb.h" />
+    <ClInclude Include="ForwardDocumentEvent.pb.h" />
+    <ClInclude Include="Organization.pb.h" />
+    <ClInclude Include="ResolutionTarget.pb.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Timestamp.pb.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Address.pb.cc" />
+    <ClCompile Include="Content.pb.cc" />
+    <ClCompile Include="diadoc_api.cpp" />
+    <ClCompile Include="DocumentId.pb.cc" />
+    <ClCompile Include="Documents\AcceptanceCertificateDocument.pb.cc" />
+    <ClCompile Include="Documents\BilateralDocument.pb.cc" />
+    <ClCompile Include="Documents\Document.pb.cc" />
+    <ClCompile Include="Documents\DocumentList.pb.cc" />
+    <ClCompile Include="Documents\InvoiceDocument.pb.cc" />
+    <ClCompile Include="Documents\NonformalizedDocument.pb.cc" />
+    <ClCompile Include="Documents\ReceiptStatus.pb.cc" />
+    <ClCompile Include="Documents\UnilateralDocument.pb.cc" />
+    <ClCompile Include="DocumentType.pb.cc" />
+    <ClCompile Include="Events\DiadocMessage.GetApi.pb.cc" />
+    <ClCompile Include="Events\DiadocMessage.PostApi.pb.cc" />
+    <ClCompile Include="Events\ResolutionInfo.pb.cc" />
+    <ClCompile Include="Events\ResolutionRequestDenialInfo.pb.cc" />
+    <ClCompile Include="Events\ResolutionRequestInfo.pb.cc" />
+    <ClCompile Include="ForwardDocumentEvent.pb.cc" />
+    <ClCompile Include="GetMyOrganizations.cpp" />
+    <ClCompile Include="Organization.pb.cc" />
+    <ClCompile Include="ResolutionTarget.pb.cc" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Timestamp.pb.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
